@@ -1,32 +1,32 @@
 {
-    "revision": "8bc28a3ca8aa2dc1b37715be0f108681c30a39fb",
-    "platform": "zenith-local-ci",
+    "revision": "local",
+    "platform": "local",
     "result": [
         {
             "suit": "test_runner/performance/test_bulk_insert.py::test_bulk_insert",
-            "total_duration": 14.161685140000372,
+            "total_duration": 24.034869544000685,
             "data": [
                 {
                     "name": "insert",
-                    "value": 13.955791905000297,
+                    "value": 23.821443440998337,
                     "unit": "s",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "pageserver_writes",
-                    "value": 711,
+                    "value": 1131,
                     "unit": "MB",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "peak_mem",
-                    "value": 284.59765625,
+                    "value": 209.765625,
                     "unit": "MB",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "size",
-                    "value": 175.444109916687,
+                    "value": 215.1698865890503,
                     "unit": "MB",
                     "report": "lower_is_better"
                 }
@@ -34,11 +34,11 @@
         },
         {
             "suit": "test_runner/performance/test_bulk_tenant_create.py::test_bulk_tenant_create[with_wa-1]",
-            "total_duration": 2.7474650889998884,
+            "total_duration": 10.196829219001302,
             "data": [
                 {
                     "name": "tenant_creation_time",
-                    "value": 1.3254809879999812,
+                    "value": 3.76812289100053,
                     "unit": "s",
                     "report": "lower_is_better"
                 }
@@ -46,11 +46,11 @@
         },
         {
             "suit": "test_runner/performance/test_bulk_tenant_create.py::test_bulk_tenant_create[with_wa-5]",
-            "total_duration": 9.477188564000244,
+            "total_duration": 15.957277189998422,
             "data": [
                 {
                     "name": "tenant_creation_time",
-                    "value": 1.519053048800015,
+                    "value": 2.536779555799876,
                     "unit": "s",
                     "report": "lower_is_better"
                 }
@@ -58,11 +58,11 @@
         },
         {
             "suit": "test_runner/performance/test_bulk_tenant_create.py::test_bulk_tenant_create[with_wa-10]",
-            "total_duration": 16.670936413999698,
+            "total_duration": 26.379574951000905,
             "data": [
                 {
                     "name": "tenant_creation_time",
-                    "value": 1.414324766700156,
+                    "value": 2.2550308616995607,
                     "unit": "s",
                     "report": "lower_is_better"
                 }
@@ -70,11 +70,11 @@
         },
         {
             "suit": "test_runner/performance/test_bulk_tenant_create.py::test_bulk_tenant_create[without_wa-1]",
-            "total_duration": 2.40664405500047,
+            "total_duration": 21.317204582999693,
             "data": [
                 {
                     "name": "tenant_creation_time",
-                    "value": 1.2338309859997025,
+                    "value": 16.423280351000358,
                     "unit": "s",
                     "report": "lower_is_better"
                 }
@@ -82,11 +82,11 @@
         },
         {
             "suit": "test_runner/performance/test_bulk_tenant_create.py::test_bulk_tenant_create[without_wa-5]",
-            "total_duration": 8.215932221000003,
+            "total_duration": 25.814152243001445,
             "data": [
                 {
                     "name": "tenant_creation_time",
-                    "value": 1.309417547400153,
+                    "value": 3.2122820216001857,
                     "unit": "s",
                     "report": "lower_is_better"
                 }
@@ -94,41 +94,107 @@
         },
         {
             "suit": "test_runner/performance/test_bulk_tenant_create.py::test_bulk_tenant_create[without_wa-10]",
-            "total_duration": 17.646895544000472,
+            "total_duration": 31.01450010300141,
             "data": [
                 {
                     "name": "tenant_creation_time",
-                    "value": 1.5118088803998944,
+                    "value": 2.721177770299801,
                     "unit": "s",
                     "report": "lower_is_better"
                 }
             ]
         },
         {
-            "suit": "test_runner/performance/test_gist_build.py::test_gist_buffering_build",
-            "total_duration": 17.666874421999637,
+            "suit": "test_runner/performance/test_copy.py::test_copy",
+            "total_duration": 12.810838183999294,
             "data": [
                 {
-                    "name": "build",
-                    "value": 14.176994784000271,
+                    "name": "copy_extend",
+                    "value": 3.0629068420003023,
                     "unit": "s",
                     "report": "lower_is_better"
                 },
                 {
-                    "name": "pageserver_writes",
-                    "value": 1617,
+                    "name": "copy_extend_pageserver_writes",
+                    "value": 180,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete",
+                    "value": 5.121535046000645,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete_pageserver_writes",
+                    "value": 249,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "vacuum",
+                    "value": 1.5899037550007051,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "vacuum_pageserver_writes",
+                    "value": 81,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "copy_reuse",
+                    "value": 2.8121575100012706,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "copy_reuse_pageserver_writes",
+                    "value": 190,
                     "unit": "MB",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "peak_mem",
-                    "value": 243.85546875,
+                    "value": 105.33984375,
                     "unit": "MB",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "size",
-                    "value": 260.19195556640625,
+                    "value": 525.5379467010498,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_gist_build.py::test_gist_buffering_build",
+            "total_duration": 37.71489136299897,
+            "data": [
+                {
+                    "name": "build",
+                    "value": 35.268376832000286,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_writes",
+                    "value": 523,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "peak_mem",
+                    "value": 117.97265625,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "size",
+                    "value": 364.0309057235718,
                     "unit": "MB",
                     "report": "lower_is_better"
                 }
@@ -136,29 +202,29 @@
         },
         {
             "suit": "test_runner/performance/test_parallel_copy_to.py::test_parallel_copy_different_tables",
-            "total_duration": 24.757415342999593,
+            "total_duration": 75.57740332899994,
             "data": [
                 {
                     "name": "load",
-                    "value": 23.909109672999875,
+                    "value": 74.33577593100017,
                     "unit": "s",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "pageserver_writes",
-                    "value": 4098,
+                    "value": 5934,
                     "unit": "MB",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "peak_mem",
-                    "value": 397.37890625,
+                    "value": 117.11328125,
                     "unit": "MB",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "size",
-                    "value": 2235.02716255188,
+                    "value": 2726.284655570984,
                     "unit": "MB",
                     "report": "lower_is_better"
                 }
@@ -166,29 +232,29 @@
         },
         {
             "suit": "test_runner/performance/test_parallel_copy_to.py::test_parallel_copy_same_table",
-            "total_duration": 35.60686488899955,
+            "total_duration": 129.91058252400035,
             "data": [
                 {
                     "name": "load",
-                    "value": 35.382404752000184,
+                    "value": 129.68966963000094,
                     "unit": "s",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "pageserver_writes",
-                    "value": 5747,
+                    "value": 9304,
                     "unit": "MB",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "peak_mem",
-                    "value": 331.46484375,
+                    "value": 109.640625,
                     "unit": "MB",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "size",
-                    "value": 2223.522805213928,
+                    "value": 3060.5045738220215,
                     "unit": "MB",
                     "report": "lower_is_better"
                 }
@@ -196,29 +262,29 @@
         },
         {
             "suit": "test_runner/performance/test_perf_pgbench.py::test_pgbench",
-            "total_duration": 7.1789156869999715,
+            "total_duration": 13.099951135000083,
             "data": [
                 {
                     "name": "init",
-                    "value": 3.0887561789995743,
+                    "value": 6.38336425900161,
                     "unit": "s",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "pageserver_writes",
-                    "value": 145,
+                    "value": 213,
                     "unit": "MB",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "5000_xacts",
-                    "value": 3.5022856190007587,
+                    "value": 5.981076471000051,
                     "unit": "s",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "size",
-                    "value": 78.7398567199707,
+                    "value": 78.74762916564941,
                     "unit": "MB",
                     "report": "lower_is_better"
                 }
@@ -226,11 +292,11 @@
         },
         {
             "suit": "test_runner/performance/test_small_seqscans.py::test_small_seqscans",
-            "total_duration": 19.631555605999893,
+            "total_duration": 32.651578966999296,
             "data": [
                 {
                     "name": "run",
-                    "value": 18.676440371999888,
+                    "value": 31.239985985999738,
                     "unit": "s",
                     "report": "lower_is_better"
                 }
@@ -238,23 +304,23 @@
         },
         {
             "suit": "test_runner/performance/test_write_amplification.py::test_write_amplification",
-            "total_duration": 18.26417341999968,
+            "total_duration": 44.58753192599943,
             "data": [
                 {
                     "name": "run",
-                    "value": 18.05687897200005,
+                    "value": 44.391994736000925,
                     "unit": "s",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "pageserver_writes",
-                    "value": 2728,
+                    "value": 2734,
                     "unit": "MB",
                     "report": "lower_is_better"
                 },
                 {
                     "name": "size",
-                    "value": 239.84055519104004,
+                    "value": 239.84051513671875,
                     "unit": "MB",
                     "report": "lower_is_better"
                 }
