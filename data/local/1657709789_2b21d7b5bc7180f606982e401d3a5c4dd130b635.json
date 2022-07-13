@@ -1,0 +1,1800 @@
+{
+    "revision": "2b21d7b5bc7180f606982e401d3a5c4dd130b635",
+    "platform": "github-actions-selfhosted",
+    "result": [
+        {
+            "suit": "test_runner/performance/test_bulk_insert.py::test_bulk_insert[vanilla]",
+            "total_duration": 2.9595328068826348,
+            "data": [
+                {
+                    "name": "insert",
+                    "value": 2.9523684731684625,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_size",
+                    "value": 196.73612308502197,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "wal_size",
+                    "value": 352.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_bulk_insert.py::test_bulk_insert[neon]",
+            "total_duration": 18.302847527200356,
+            "data": [
+                {
+                    "name": "insert",
+                    "value": 17.385557634057477,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_writes",
+                    "value": 878,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "peak_mem",
+                    "value": 206.08984375,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "size",
+                    "value": 473.33642578125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_uploaded",
+                    "value": 471.8828125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "num_files_uploaded",
+                    "value": 2,
+                    "unit": "",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_bulk_tenant_create.py::test_bulk_tenant_create[1]",
+            "total_duration": 2.016455443110317,
+            "data": [
+                {
+                    "name": "tenant_creation_time",
+                    "value": 1.1429732681717724,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_bulk_tenant_create.py::test_bulk_tenant_create[5]",
+            "total_duration": 6.587344978936017,
+            "data": [
+                {
+                    "name": "tenant_creation_time",
+                    "value": 1.0808671691920608,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_bulk_tenant_create.py::test_bulk_tenant_create[10]",
+            "total_duration": 12.464404615107924,
+            "data": [
+                {
+                    "name": "tenant_creation_time",
+                    "value": 1.083257579896599,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_rw_with_pgbench_default[vanilla-5-10-100]",
+            "total_duration": 8.309768030187115,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_inserted",
+                    "value": 9762,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_returned",
+                    "value": 2103747,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_updated",
+                    "value": 29200,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_fetched",
+                    "value": 20756,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_deleted",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_rw_with_pgbench_default[neon-5-10-100]",
+            "total_duration": 10.844795679906383,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_inserted",
+                    "value": 7654,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_returned",
+                    "value": 865766,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_updated",
+                    "value": 22963,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_fetched",
+                    "value": 16044,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_deleted",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_wo_with_pgbench_simple_update[vanilla-5-10-100]",
+            "total_duration": 7.319313628133386,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_updated",
+                    "value": 16871,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_deleted",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_inserted",
+                    "value": 16870,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_wo_with_pgbench_simple_update[neon-5-10-100]",
+            "total_duration": 11.195033079944551,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_updated",
+                    "value": 9661,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_deleted",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_inserted",
+                    "value": 9660,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_ro_with_pgbench_select_only[vanilla-5-10-100]",
+            "total_duration": 7.178320130798966,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_returned",
+                    "value": 1079831,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_fetched",
+                    "value": 74874,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_ro_with_pgbench_select_only[neon-5-10-100]",
+            "total_duration": 12.669057132210582,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_returned",
+                    "value": 22734,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_fetched",
+                    "value": 21101,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_wal_with_pgbench_default[vanilla-5-10-100]",
+            "total_duration": 7.662960619898513,
+            "data": [
+                {
+                    "name": "pg_stat_wal.wal_write",
+                    "value": 6427,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_fpi",
+                    "value": 8894,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_records",
+                    "value": 54351,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_bytes",
+                    "value": 74467854,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_buffers_full",
+                    "value": 58,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_wal_with_pgbench_default[neon-5-10-100]",
+            "total_duration": 12.869902590056881,
+            "data": [
+                {
+                    "name": "pg_stat_wal.wal_write",
+                    "value": 5310,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_fpi",
+                    "value": 80,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_records",
+                    "value": 35654,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_bytes",
+                    "value": 3576633,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_buffers_full",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_copy.py::test_copy[vanilla]",
+            "total_duration": 6.146336056990549,
+            "data": [
+                {
+                    "name": "copy_extend",
+                    "value": 2.3174601518549025,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete",
+                    "value": 0.971066297031939,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "vacuum",
+                    "value": 0.584961264161393,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "copy_reuse",
+                    "value": 2.2594603840261698,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_size",
+                    "value": 97.63456058502197,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "wal_size",
+                    "value": 144.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_copy.py::test_copy[neon]",
+            "total_duration": 14.886023567989469,
+            "data": [
+                {
+                    "name": "copy_extend",
+                    "value": 2.4898490018676966,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "copy_extend_pageserver_writes",
+                    "value": 98,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete",
+                    "value": 5.476932445075363,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete_pageserver_writes",
+                    "value": 147,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "vacuum",
+                    "value": 2.351861495990306,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "vacuum_pageserver_writes",
+                    "value": 13,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "copy_reuse",
+                    "value": 3.6056553260423243,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "copy_reuse_pageserver_writes",
+                    "value": 122,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "peak_mem",
+                    "value": 119.01953125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "size",
+                    "value": 217.14892578125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_uploaded",
+                    "value": 217.1484375,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "num_files_uploaded",
+                    "value": 4,
+                    "unit": "",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_gist_build.py::test_gist_buffering_build[vanilla]",
+            "total_duration": 10.887837501941249,
+            "data": [
+                {
+                    "name": "build",
+                    "value": 9.746958472998813,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_size",
+                    "value": 167.97049808502197,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "wal_size",
+                    "value": 144.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_gist_build.py::test_gist_buffering_build[neon]",
+            "total_duration": 16.979392023058608,
+            "data": [
+                {
+                    "name": "build",
+                    "value": 12.831558871082962,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_writes",
+                    "value": 378,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "peak_mem",
+                    "value": 130.52734375,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "size",
+                    "value": 204.96142578125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_uploaded",
+                    "value": 204.9609375,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "num_files_uploaded",
+                    "value": 1,
+                    "unit": "",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_parallel_copy_to.py::test_parallel_copy_different_tables[vanilla]",
+            "total_duration": 19.713594177970663,
+            "data": [
+                {
+                    "name": "load",
+                    "value": 19.691863253945485,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_size",
+                    "value": 2244.009560585022,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "wal_size",
+                    "value": 576.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_parallel_copy_to.py::test_parallel_copy_different_tables[neon]",
+            "total_duration": 16.545262508792803,
+            "data": [
+                {
+                    "name": "load",
+                    "value": 15.067970192059875,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_writes",
+                    "value": 3596,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "peak_mem",
+                    "value": 122.1015625,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "size",
+                    "value": 1802.72705078125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_uploaded",
+                    "value": 1802.7265625,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "num_files_uploaded",
+                    "value": 7,
+                    "unit": "",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_parallel_copy_to.py::test_parallel_copy_same_table[vanilla]",
+            "total_duration": 24.108801651047543,
+            "data": [
+                {
+                    "name": "load",
+                    "value": 24.09459407394752,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_size",
+                    "value": 2243.861123085022,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "wal_size",
+                    "value": 592.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_parallel_copy_to.py::test_parallel_copy_same_table[neon]",
+            "total_duration": 22.6637339128647,
+            "data": [
+                {
+                    "name": "load",
+                    "value": 21.746068510925397,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_writes",
+                    "value": 7081,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "peak_mem",
+                    "value": 117.234375,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "size",
+                    "value": 3545.12548828125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_uploaded",
+                    "value": 3545.125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "num_files_uploaded",
+                    "value": 7,
+                    "unit": "",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_perf_pgbench.py::test_pgbench[vanilla-45-10]",
+            "total_duration": 93.11557324510068,
+            "data": [
+                {
+                    "name": "scale",
+                    "value": 10,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "init.duration",
+                    "value": 2.943238808074966,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "init.start_timestamp",
+                    "value": 1657707673,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "init.end_timestamp",
+                    "value": 1657707676,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.number_of_clients",
+                    "value": 4,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.number_of_threads",
+                    "value": 1,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.number_of_transactions_actually_processed",
+                    "value": 370864,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.latency_average",
+                    "value": 0.481,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "simple-update.latency_stddev",
+                    "value": 0.49,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "simple-update.tps",
+                    "value": 8242.38475,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "simple-update.run_duration",
+                    "value": 45.02127329213545,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "simple-update.run_start_timestamp",
+                    "value": 1657707676,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.run_end_timestamp",
+                    "value": 1657707721,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.number_of_clients",
+                    "value": 4,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.number_of_threads",
+                    "value": 1,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.number_of_transactions_actually_processed",
+                    "value": 1719630,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.latency_average",
+                    "value": 0.1,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "select-only.latency_stddev",
+                    "value": 0.181,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "select-only.tps",
+                    "value": 38218.05536,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "select-only.run_duration",
+                    "value": 45.01987460907549,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "select-only.run_start_timestamp",
+                    "value": 1657707721,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.run_end_timestamp",
+                    "value": 1657707766,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "data_size",
+                    "value": 175.71268558502197,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "wal_size",
+                    "value": 256.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_perf_pgbench.py::test_pgbench[neon-45-10]",
+            "total_duration": 97.21439470397308,
+            "data": [
+                {
+                    "name": "scale",
+                    "value": 10,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "init.pageserver_writes",
+                    "value": 245,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "init.duration",
+                    "value": 6.696016401052475,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "init.start_timestamp",
+                    "value": 1657707767,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "init.end_timestamp",
+                    "value": 1657707774,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.pageserver_writes",
+                    "value": 152,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "simple-update.number_of_clients",
+                    "value": 4,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.number_of_threads",
+                    "value": 1,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.number_of_transactions_actually_processed",
+                    "value": 169672,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.latency_average",
+                    "value": 1.056,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "simple-update.latency_stddev",
+                    "value": 0.641,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "simple-update.tps",
+                    "value": 3770.978362,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "simple-update.run_duration",
+                    "value": 45.028777381172404,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "simple-update.run_start_timestamp",
+                    "value": 1657707774,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.run_end_timestamp",
+                    "value": 1657707819,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.pageserver_writes",
+                    "value": 1,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "select-only.number_of_clients",
+                    "value": 4,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.number_of_threads",
+                    "value": 1,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.number_of_transactions_actually_processed",
+                    "value": 338360,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.latency_average",
+                    "value": 0.531,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "select-only.latency_stddev",
+                    "value": 0.386,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "select-only.tps",
+                    "value": 7520.375704,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "select-only.run_duration",
+                    "value": 45.03048524889164,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "select-only.run_start_timestamp",
+                    "value": 1657707819,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.run_end_timestamp",
+                    "value": 1657707864,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "size",
+                    "value": 204.74267578125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_uploaded",
+                    "value": 204.7421875,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "num_files_uploaded",
+                    "value": 3,
+                    "unit": "",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_perf_pgbench.py::test_pgbench_flamegraph[45-10]",
+            "total_duration": 99.5858934558928,
+            "data": [
+                {
+                    "name": "scale",
+                    "value": 10,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "init.pageserver_writes",
+                    "value": 249,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "init.duration",
+                    "value": 7.241621911991388,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "init.start_timestamp",
+                    "value": 1657707869,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "init.end_timestamp",
+                    "value": 1657707876,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.pageserver_writes",
+                    "value": 120,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "simple-update.number_of_clients",
+                    "value": 4,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.number_of_threads",
+                    "value": 1,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.number_of_transactions_actually_processed",
+                    "value": 123364,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.latency_average",
+                    "value": 1.454,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "simple-update.latency_stddev",
+                    "value": 1.173,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "simple-update.tps",
+                    "value": 2741.745261,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "simple-update.run_duration",
+                    "value": 45.03311624820344,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "simple-update.run_start_timestamp",
+                    "value": 1657707876,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "simple-update.run_end_timestamp",
+                    "value": 1657707921,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.pageserver_writes",
+                    "value": 1,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "select-only.number_of_clients",
+                    "value": 4,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.number_of_threads",
+                    "value": 1,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.number_of_transactions_actually_processed",
+                    "value": 264985,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.latency_average",
+                    "value": 0.678,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "select-only.latency_stddev",
+                    "value": 0.636,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "select-only.tps",
+                    "value": 5889.464758,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "select-only.run_duration",
+                    "value": 45.03538140607998,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "select-only.run_start_timestamp",
+                    "value": 1657707921,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "select-only.run_end_timestamp",
+                    "value": 1657707966,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "size",
+                    "value": 189.53955078125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_uploaded",
+                    "value": 189.5390625,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "num_files_uploaded",
+                    "value": 3,
+                    "unit": "",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_random_writes.py::test_random_writes[vanilla]",
+            "total_duration": 2.108815162908286,
+            "data": [
+                {
+                    "name": "init",
+                    "value": 2.0487762950360775,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "table_size",
+                    "value": 36249600,
+                    "unit": "bytes",
+                    "report": "test_param"
+                },
+                {
+                    "name": "effective_checkpoint_distance",
+                    "value": 36,
+                    "unit": "bytes",
+                    "report": "test_param"
+                },
+                {
+                    "name": "run",
+                    "value": 0.057434212882071733,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_random_writes.py::test_random_writes[neon]",
+            "total_duration": 9.190717092016712,
+            "data": [
+                {
+                    "name": "init",
+                    "value": 8.268354170955718,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "table_size",
+                    "value": 36249600,
+                    "unit": "bytes",
+                    "report": "test_param"
+                },
+                {
+                    "name": "effective_checkpoint_distance",
+                    "value": 36,
+                    "unit": "bytes",
+                    "report": "test_param"
+                },
+                {
+                    "name": "run",
+                    "value": 0.911529045086354,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_seqscans.py::test_seqscans[vanilla-100000-100-0]",
+            "total_duration": 0.6576988599263132,
+            "data": [
+                {
+                    "name": "table_size",
+                    "value": 3629056,
+                    "unit": "bytes",
+                    "report": "test_param"
+                },
+                {
+                    "name": "run",
+                    "value": 0.5840242060367018,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_seqscans.py::test_seqscans[vanilla-10000000-1-0]",
+            "total_duration": 9.660883774980903,
+            "data": [
+                {
+                    "name": "table_size",
+                    "value": 362479616,
+                    "unit": "bytes",
+                    "report": "test_param"
+                },
+                {
+                    "name": "run",
+                    "value": 1.0539962649345398,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_seqscans.py::test_seqscans[vanilla-10000000-1-4]",
+            "total_duration": 8.862502504140139,
+            "data": [
+                {
+                    "name": "table_size",
+                    "value": 362479616,
+                    "unit": "bytes",
+                    "report": "test_param"
+                },
+                {
+                    "name": "run",
+                    "value": 0.3503088990692049,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_seqscans.py::test_seqscans[neon-100000-100-0]",
+            "total_duration": 3.9469100409187376,
+            "data": [
+                {
+                    "name": "table_size",
+                    "value": 3629056,
+                    "unit": "bytes",
+                    "report": "test_param"
+                },
+                {
+                    "name": "run",
+                    "value": 2.1741948190610856,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_seqscans.py::test_seqscans[neon-10000000-1-0]",
+            "total_duration": 46.975130388047546,
+            "data": [
+                {
+                    "name": "table_size",
+                    "value": 362479616,
+                    "unit": "bytes",
+                    "report": "test_param"
+                },
+                {
+                    "name": "run",
+                    "value": 15.675785802071914,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_seqscans.py::test_seqscans[neon-10000000-1-4]",
+            "total_duration": 47.279617401072755,
+            "data": [
+                {
+                    "name": "table_size",
+                    "value": 362479616,
+                    "unit": "bytes",
+                    "report": "test_param"
+                },
+                {
+                    "name": "run",
+                    "value": 12.994851330993697,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_startup.py::test_startup",
+            "total_duration": 337.17730214307085,
+            "data": [
+                {
+                    "name": "startup_time",
+                    "value": 0.2014904951211065,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "restart_time",
+                    "value": 0.7760631039272994,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_time",
+                    "value": 3.5016207760199904,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "second_read_time",
+                    "value": 1.3532896051183343,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "restart_with_data",
+                    "value": 0.2291776689235121,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_after_restart",
+                    "value": 1.0020397859625518,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_wal_backpressure.py::test_heavy_write_workload[vanilla-10-5-5]",
+            "total_duration": 58.14291538181715,
+            "data": [
+                {
+                    "name": "run_duration",
+                    "value": 57.53526367782615,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_max",
+                    "value": 0.007705003023147583,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_avg",
+                    "value": 0.000733001840076056,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_stdev",
+                    "value": 0.0011253984312266359,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_wal_backpressure.py::test_heavy_write_workload[neon_off-10-5-5]",
+            "total_duration": 211.6690791968722,
+            "data": [
+                {
+                    "name": "run_duration",
+                    "value": 209.4981403418351,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_max",
+                    "value": 0.19613686203956604,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_avg",
+                    "value": 0.03748930047501321,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_stdev",
+                    "value": 0.03236685129071926,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_max",
+                    "value": 4.138435363769531,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_avg",
+                    "value": 1.3876024155389695,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_stdev",
+                    "value": 0.6706656095247636,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_wal_backpressure.py::test_heavy_write_workload[neon_on-10-5-5]",
+            "total_duration": 223.6659626159817,
+            "data": [
+                {
+                    "name": "run_duration",
+                    "value": 222.1220561559312,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_max",
+                    "value": 0.17244460992515087,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_avg",
+                    "value": 0.04652284502429571,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_stdev",
+                    "value": 0.03468759578224092,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_max",
+                    "value": 4.0360565185546875,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_avg",
+                    "value": 1.3476695155238245,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_stdev",
+                    "value": 0.7071824095595222,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_wal_backpressure.py::test_pgbench_simple_update_workload[vanilla-45-100]",
+            "total_duration": 75.83810412697494,
+            "data": [
+                {
+                    "name": "run_duration",
+                    "value": 54.17338928813115,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_max",
+                    "value": 0.020476728212088346,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_avg",
+                    "value": 0.0022214327473193407,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_stdev",
+                    "value": 0.004213505449834235,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_wal_backpressure.py::test_pgbench_simple_update_workload[neon_off-45-100]",
+            "total_duration": 111.11320258397609,
+            "data": [
+                {
+                    "name": "run_duration",
+                    "value": 45.59639151301235,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_max",
+                    "value": 0.5758438110351562,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_avg",
+                    "value": 0.22808854476265286,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_stdev",
+                    "value": 0.10798737799518994,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_max",
+                    "value": 0.16622801101766527,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_avg",
+                    "value": 0.005058199450697588,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_stdev",
+                    "value": 0.024309239679231875,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_wal_backpressure.py::test_pgbench_simple_update_workload[neon_on-45-100]",
+            "total_duration": 143.49485846492462,
+            "data": [
+                {
+                    "name": "run_duration",
+                    "value": 45.75718588801101,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_max",
+                    "value": 0.7384262084960938,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_avg",
+                    "value": 0.2714616526728091,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_stdev",
+                    "value": 0.15938918386931158,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_max",
+                    "value": 0.01670296397060156,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_avg",
+                    "value": 0.002422582342937265,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_stdev",
+                    "value": 0.003006694326817467,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_wal_backpressure.py::test_pgbench_intensive_init_workload[vanilla-1000]",
+            "total_duration": 270.04557710001245,
+            "data": [
+                {
+                    "name": "run_duration",
+                    "value": 269.6920895949006,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_max",
+                    "value": 0.017382861115038395,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_avg",
+                    "value": 0.00607492116109621,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_stdev",
+                    "value": 0.001781035428102641,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_wal_backpressure.py::test_pgbench_intensive_init_workload[neon_off-1000]",
+            "total_duration": 86.6344506458845,
+            "data": [
+                {
+                    "name": "run_duration",
+                    "value": 84.66040330589749,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_max",
+                    "value": 15.090011596679688,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_avg",
+                    "value": 8.506785347348167,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_stdev",
+                    "value": 6.188386819412971,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_max",
+                    "value": 2.0216865479014814,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_avg",
+                    "value": 0.9418884730601514,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_stdev",
+                    "value": 0.5957298608058315,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_wal_backpressure.py::test_pgbench_intensive_init_workload[neon_on-1000]",
+            "total_duration": 102.32918379106559,
+            "data": [
+                {
+                    "name": "run_duration",
+                    "value": 100.29139321413822,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_max",
+                    "value": 15.1092529296875,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_avg",
+                    "value": 9.988513717651367,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_stdev",
+                    "value": 5.632580091784623,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_max",
+                    "value": 13.936643918976188,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_avg",
+                    "value": 6.226836901440818,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_stdev",
+                    "value": 3.4747956522145396,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_write_amplification.py::test_write_amplification[vanilla]",
+            "total_duration": 4.713443594053388,
+            "data": [
+                {
+                    "name": "run",
+                    "value": 4.707701239036396,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_size",
+                    "value": 260.681435585022,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "wal_size",
+                    "value": 32.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_write_amplification.py::test_write_amplification[neon]",
+            "total_duration": 11.68363470910117,
+            "data": [
+                {
+                    "name": "run",
+                    "value": 11.671419698977843,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_writes",
+                    "value": 678,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "size",
+                    "value": 376.57861328125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_uploaded",
+                    "value": 376.953125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "num_files_uploaded",
+                    "value": 25,
+                    "unit": "",
+                    "report": "lower_is_better"
+                }
+            ]
+        }
+    ]
+}
