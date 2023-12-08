@@ -1,0 +1,972 @@
+{
+    "revision": "cf024de2027052ed7c58c017763f89b792d066b4",
+    "platform": "github-actions-selfhosted",
+    "result": [
+        {
+            "suit": "test_runner/performance/test_branch_creation.py::test_branch_creation_heavy_write[20]",
+            "total_duration": 47.39537687599659,
+            "data": [
+                {
+                    "name": "branch_creation_duration_max",
+                    "value": 5.369439672678709,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "branch_creation_duration_avg",
+                    "value": 0.4695228569209576,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "branch_creation_duration_stdev",
+                    "value": 1.284814607556588,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_branch_creation.py::test_branch_creation_many[1024]",
+            "total_duration": 81.45544544607401,
+            "data": [
+                {
+                    "name": "branch_creation_duration_max",
+                    "value": 0.3562186472117901,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "branch_creation_duration_avg",
+                    "value": 0.07475798581435811,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "branch_creation_duration_stdev",
+                    "value": 0.025748985000383324,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_branch_creation.py::test_branch_creation_many_relations",
+            "total_duration": 25.093301240354776,
+            "data": [
+                {
+                    "name": "create_branch_time_not_busy_root",
+                    "value": 0.06285436078906059,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "create_branch_time_busy_root",
+                    "value": 0.09019078314304352,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_branching.py::test_compare_child_and_root_pgbench_perf",
+            "total_duration": 25.36821747943759,
+            "data": [
+                {
+                    "name": "root.number_of_clients",
+                    "value": 10,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "root.number_of_threads",
+                    "value": 1,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "root.number_of_transactions_actually_processed",
+                    "value": 73477,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "root.latency_average",
+                    "value": 1.359,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "root.tps",
+                    "value": 7360.926849,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "root.run_duration",
+                    "value": 10.034737821668386,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "root.run_start_timestamp",
+                    "value": 1702057049,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "root.run_end_timestamp",
+                    "value": 1702057059,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "root.scale",
+                    "value": 10,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "child.number_of_clients",
+                    "value": 10,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "child.number_of_threads",
+                    "value": 1,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "child.number_of_transactions_actually_processed",
+                    "value": 69463,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "child.latency_average",
+                    "value": 1.438,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "child.tps",
+                    "value": 6954.526509,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "child.run_duration",
+                    "value": 10.028395969420671,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "child.run_start_timestamp",
+                    "value": 1702057059,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "child.run_end_timestamp",
+                    "value": 1702057069,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "child.scale",
+                    "value": 10,
+                    "unit": "",
+                    "report": "test_param"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_branching.py::test_compare_child_and_root_write_perf",
+            "total_duration": 13.522226497530937,
+            "data": [
+                {
+                    "name": "root_run_duration",
+                    "value": 6.411068305373192,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "child_run_duration",
+                    "value": 6.341617505997419,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_branching.py::test_compare_child_and_root_read_perf",
+            "total_duration": 10.834829535335302,
+            "data": [
+                {
+                    "name": "root_run_duration",
+                    "value": 1.1112280674278736,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "child_run_duration",
+                    "value": 1.1856360286474228,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_bulk_insert.py::test_bulk_insert[vanilla]",
+            "total_duration": 3.8616068847477436,
+            "data": [
+                {
+                    "name": "insert",
+                    "value": 3.840054966509342,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_size",
+                    "value": 196.73612308502197,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "wal_size",
+                    "value": 352.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "wal_written",
+                    "value": 344,
+                    "unit": "MB",
+                    "report": "test_param"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_bulk_insert.py::test_bulk_insert[neon]",
+            "total_duration": 23.244708131998777,
+            "data": [
+                {
+                    "name": "insert",
+                    "value": 11.573065765202045,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_writes",
+                    "value": 1353,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "peak_mem",
+                    "value": 346.7109375,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "size",
+                    "value": 0.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_uploaded",
+                    "value": 497.9921875,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "num_files_uploaded",
+                    "value": 3,
+                    "unit": "",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "wal_written",
+                    "value": 345,
+                    "unit": "MB",
+                    "report": "test_param"
+                },
+                {
+                    "name": "wal_recovery",
+                    "value": 10.939736738801003,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_bulk_tenant_create.py::test_bulk_tenant_create[1]",
+            "total_duration": 4.047962266951799,
+            "data": [
+                {
+                    "name": "tenant_creation_time",
+                    "value": 2.2730162478983402,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_bulk_tenant_create.py::test_bulk_tenant_create[5]",
+            "total_duration": 13.843091260641813,
+            "data": [
+                {
+                    "name": "tenant_creation_time",
+                    "value": 2.3006852373480795,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_bulk_tenant_create.py::test_bulk_tenant_create[10]",
+            "total_duration": 28.243231922388077,
+            "data": [
+                {
+                    "name": "tenant_creation_time",
+                    "value": 2.5181271865963937,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_bulk_update.py::test_bulk_update[10]",
+            "total_duration": 62.71589247882366,
+            "data": [
+                {
+                    "name": "insert-1",
+                    "value": 2.260002851486206,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "update-no-prefetch",
+                    "value": 7.641877640038729,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete-no-prefetch",
+                    "value": 9.434105210006237,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "insert-2",
+                    "value": 1.8238979279994965,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "update-with-prefetch",
+                    "value": 4.6176654025912285,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete-with-prefetch",
+                    "value": 7.423686932772398,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_bulk_update.py::test_bulk_update[50]",
+            "total_duration": 38.716370187699795,
+            "data": [
+                {
+                    "name": "insert-1",
+                    "value": 0.6109473221004009,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "update-no-prefetch",
+                    "value": 4.428324393928051,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete-no-prefetch",
+                    "value": 5.715284314006567,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "insert-2",
+                    "value": 1.5968346185982227,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "update-with-prefetch",
+                    "value": 3.4328689612448215,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete-with-prefetch",
+                    "value": 4.4725833758711815,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_bulk_update.py::test_bulk_update[100]",
+            "total_duration": 64.27017173916101,
+            "data": [
+                {
+                    "name": "insert-1",
+                    "value": 2.0292345471680164,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "update-no-prefetch",
+                    "value": 6.178366530686617,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete-no-prefetch",
+                    "value": 9.72800962254405,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "insert-2",
+                    "value": 2.471573166549206,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "update-with-prefetch",
+                    "value": 7.589217998087406,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete-with-prefetch",
+                    "value": 10.972898043692112,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compaction.py::test_compaction",
+            "total_duration": 103.16960290074348,
+            "data": [
+                {
+                    "name": "compaction",
+                    "value": 57.92872367054224,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "image_creation",
+                    "value": 0.03447214886546135,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "size",
+                    "value": 0.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_uploaded",
+                    "value": 6201.8671875,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "num_files_uploaded",
+                    "value": 236,
+                    "unit": "",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_rw_with_pgbench_default[vanilla-5-10-100]",
+            "total_duration": 11.720090180635452,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_deleted",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_fetched",
+                    "value": 16390,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_returned",
+                    "value": 885258,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_updated",
+                    "value": 23482,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_inserted",
+                    "value": 7827,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_rw_with_pgbench_default[neon-5-10-100]",
+            "total_duration": 10.712594959884882,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_deleted",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_fetched",
+                    "value": 11642,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_returned",
+                    "value": 616745,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_updated",
+                    "value": 16333,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_inserted",
+                    "value": 5444,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_wo_with_pgbench_simple_update[vanilla-5-10-100]",
+            "total_duration": 11.328569825738668,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_updated",
+                    "value": 11340,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_deleted",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_inserted",
+                    "value": 11339,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_wo_with_pgbench_simple_update[neon-5-10-100]",
+            "total_duration": 10.271499197930098,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_updated",
+                    "value": 6296,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_deleted",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_inserted",
+                    "value": 6295,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_ro_with_pgbench_select_only[vanilla-5-10-100]",
+            "total_duration": 10.631921131163836,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_returned",
+                    "value": 96876,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_fetched",
+                    "value": 95243,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_ro_with_pgbench_select_only[neon-5-10-100]",
+            "total_duration": 10.260484736412764,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_returned",
+                    "value": 22116,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_fetched",
+                    "value": 20482,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_wal_with_pgbench_default[vanilla-5-10-100]",
+            "total_duration": 9.385396257042885,
+            "data": [
+                {
+                    "name": "pg_stat_wal.wal_bytes",
+                    "value": 100672740,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_write",
+                    "value": 9640,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_fpi",
+                    "value": 12310,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_records",
+                    "value": 63888,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_buffers_full",
+                    "value": 2483,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_wal_with_pgbench_default[neon-5-10-100]",
+            "total_duration": 10.178431615233421,
+            "data": [
+                {
+                    "name": "pg_stat_wal.wal_bytes",
+                    "value": 3796655,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_write",
+                    "value": 5420,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_fpi",
+                    "value": 78,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_records",
+                    "value": 36390,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_wal.wal_buffers_full",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_wo_with_heavy_write[vanilla-10-1]",
+            "total_duration": 10.036106497049332,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_updated",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_deleted",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_inserted",
+                    "value": 2772000,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_wo_with_heavy_write[vanilla-10-10]",
+            "total_duration": 10.145756620913744,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_updated",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_deleted",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_inserted",
+                    "value": 4161000,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_wo_with_heavy_write[neon-10-1]",
+            "total_duration": 10.295132722705603,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_updated",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_deleted",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_inserted",
+                    "value": 1727000,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_compare_pg_stats.py::test_compare_pg_stats_wo_with_heavy_write[neon-10-10]",
+            "total_duration": 10.273833125829697,
+            "data": [
+                {
+                    "name": "pg_stat_database.tup_updated",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_deleted",
+                    "value": 0,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pg_stat_database.tup_inserted",
+                    "value": 1761000,
+                    "unit": "",
+                    "report": "higher_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_copy.py::test_copy[vanilla]",
+            "total_duration": 5.6452490240335464,
+            "data": [
+                {
+                    "name": "copy_extend",
+                    "value": 2.0590385906398296,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete",
+                    "value": 0.9048091992735863,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "vacuum",
+                    "value": 0.6410214565694332,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "copy_reuse",
+                    "value": 2.022794760763645,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_size",
+                    "value": 97.63456058502197,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "wal_size",
+                    "value": 144.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_copy.py::test_copy[neon]",
+            "total_duration": 13.85770621150732,
+            "data": [
+                {
+                    "name": "copy_extend",
+                    "value": 2.227991994470358,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "copy_extend_pageserver_writes",
+                    "value": 182,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete",
+                    "value": 3.3386604972183704,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "delete_pageserver_writes",
+                    "value": 248,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "vacuum",
+                    "value": 3.4940029308199883,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "vacuum_pageserver_writes",
+                    "value": 20,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "copy_reuse",
+                    "value": 4.476450964808464,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "copy_reuse_pageserver_writes",
+                    "value": 186,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "peak_mem",
+                    "value": 217.23046875,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "size",
+                    "value": 0.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_uploaded",
+                    "value": 241.5625,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "num_files_uploaded",
+                    "value": 5,
+                    "unit": "",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_gc_feedback.py::test_gc_feedback",
+            "total_duration": 237.8600055128336,
+            "data": [
+                {
+                    "name": "logical_size",
+                    "value": 53,
+                    "unit": "Mb",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "physical_size",
+                    "value": 2386,
+                    "unit": "Mb",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "physical/logical ratio",
+                    "value": 44.330576113771585,
+                    "unit": "",
+                    "report": "lower_is_better"
+                }
+            ]
+        }
+    ]
+}
