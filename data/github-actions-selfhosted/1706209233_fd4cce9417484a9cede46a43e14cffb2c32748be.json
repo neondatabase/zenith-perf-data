@@ -1,0 +1,402 @@
+{
+    "revision": "fd4cce9417484a9cede46a43e14cffb2c32748be",
+    "platform": "github-actions-selfhosted",
+    "result": [
+        {
+            "suit": "test_runner/performance/test_wal_backpressure.py::test_pgbench_intensive_init_workload[neon_on-1000]",
+            "total_duration": 340.35141709819436,
+            "data": [
+                {
+                    "name": "run_duration",
+                    "value": 339.21192779019475,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_max",
+                    "value": 0.5817827694118023,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_avg",
+                    "value": 0.1704967396911876,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "read_latency_stdev",
+                    "value": 0.13842089232758825,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_max",
+                    "value": 15.126983642578125,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_avg",
+                    "value": 14.313189751279038,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "lsn_write_lag_stdev",
+                    "value": 2.275838092426699,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_write_amplification.py::test_write_amplification[vanilla]",
+            "total_duration": 16.915344014763832,
+            "data": [
+                {
+                    "name": "run",
+                    "value": 16.899762101471424,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_size",
+                    "value": 260.704873085022,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "wal_size",
+                    "value": 32.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/test_write_amplification.py::test_write_amplification[neon]",
+            "total_duration": 20.001738283783197,
+            "data": [
+                {
+                    "name": "run",
+                    "value": 19.884808138012886,
+                    "unit": "s",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_writes",
+                    "value": 1717,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "size",
+                    "value": 0.0,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "data_uploaded",
+                    "value": 711.7265625,
+                    "unit": "MB",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "num_files_uploaded",
+                    "value": 28,
+                    "unit": "",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/pageserver/pagebench/test_pageserver_max_throughput_getpage_at_latest_lsn.py::test_pageserver_max_throughput_getpage_at_latest_lsn[1-6-30]",
+            "total_duration": 324.40142254158854,
+            "data": [
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.n_tenants",
+                    "value": 1,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.pgbench_scale",
+                    "value": 6,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.duration",
+                    "value": 30,
+                    "unit": "s",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.pageserver_config_override.page_cache_size",
+                    "value": 134217728,
+                    "unit": "byte",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.pageserver_config_override.max_file_descriptors",
+                    "value": 500000,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.request_count",
+                    "value": 53410,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_mean",
+                    "value": 0.559,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p95",
+                    "value": 0.919,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p99",
+                    "value": 0.919,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p99.9",
+                    "value": 0.919,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p99.99",
+                    "value": 0.919,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/pageserver/pagebench/test_pageserver_max_throughput_getpage_at_latest_lsn.py::test_pageserver_max_throughput_getpage_at_latest_lsn[1-13-30]",
+            "total_duration": 372.0258433185518,
+            "data": [
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.n_tenants",
+                    "value": 1,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.pgbench_scale",
+                    "value": 13,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.duration",
+                    "value": 30,
+                    "unit": "s",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.pageserver_config_override.page_cache_size",
+                    "value": 134217728,
+                    "unit": "byte",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.pageserver_config_override.max_file_descriptors",
+                    "value": 500000,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.request_count",
+                    "value": 76078,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_mean",
+                    "value": 0.392,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p95",
+                    "value": 0.759,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p99",
+                    "value": 0.759,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p99.9",
+                    "value": 0.759,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p99.99",
+                    "value": 0.759,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/pageserver/pagebench/test_pageserver_max_throughput_getpage_at_latest_lsn.py::test_pageserver_max_throughput_getpage_at_latest_lsn[10-6-30]",
+            "total_duration": 339.3162002749741,
+            "data": [
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.n_tenants",
+                    "value": 10,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.pgbench_scale",
+                    "value": 6,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.duration",
+                    "value": 30,
+                    "unit": "s",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.pageserver_config_override.page_cache_size",
+                    "value": 134217728,
+                    "unit": "byte",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.pageserver_config_override.max_file_descriptors",
+                    "value": 500000,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.request_count",
+                    "value": 506982,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_mean",
+                    "value": 0.515,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p95",
+                    "value": 1.212,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p99",
+                    "value": 1.212,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p99.9",
+                    "value": 1.212,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p99.99",
+                    "value": 1.212,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                }
+            ]
+        },
+        {
+            "suit": "test_runner/performance/pageserver/pagebench/test_pageserver_max_throughput_getpage_at_latest_lsn.py::test_pageserver_max_throughput_getpage_at_latest_lsn[10-13-30]",
+            "total_duration": 387.1443694643676,
+            "data": [
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.n_tenants",
+                    "value": 10,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.pgbench_scale",
+                    "value": 13,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.duration",
+                    "value": 30,
+                    "unit": "s",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.pageserver_config_override.page_cache_size",
+                    "value": 134217728,
+                    "unit": "byte",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.pageserver_config_override.max_file_descriptors",
+                    "value": 500000,
+                    "unit": "",
+                    "report": "test_param"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.request_count",
+                    "value": 603940,
+                    "unit": "",
+                    "report": "higher_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_mean",
+                    "value": 0.432,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p95",
+                    "value": 1.0,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p99",
+                    "value": 1.0,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p99.9",
+                    "value": 1.0,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                },
+                {
+                    "name": "pageserver_max_throughput_getpage_at_latest_lsn.latency_percentiles.p99.99",
+                    "value": 1.0,
+                    "unit": "ms",
+                    "report": "lower_is_better"
+                }
+            ]
+        }
+    ]
+}
